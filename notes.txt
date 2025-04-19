@@ -1,0 +1,47 @@
+/coffee-shop-ecommerce
+|-- /assets
+|    |-- /css
+|    |-- /js
+|    |-- /images
+|
+|-- /config
+|    |-- database.php
+|
+|-- /controllers
+|    |-- AuthController.php
+|    |-- ProductController.php
+|    |-- OrderController.php
+|    |-- ReportController.php
+|
+|-- /models
+|    |-- User.php
+|    |-- Product.php
+|    |-- Order.php
+|    |-- Transaction.php
+|    |-- AuditTrail.php
+|
+|-- /views
+|    |-- /auth
+|    |    |-- login.php
+|    |    |-- register.php
+|    |    |-- reset_password.php
+|    |-- /products
+|    |    |-- list.php
+|    |    |-- detail.php
+|    |-- /orders
+|    |    |-- cart.php
+|    |    |-- checkout.php
+|    |    |-- order_confirmation.php
+|    |-- /reports
+|         |-- transactions.php
+|         |-- audit_trail.php
+|
+|-- index.php
+|-- .htaccess
+
+
+Notes
+- Follow MVC structure for better organization (even in native PHP).
+- Use prepared statements (PDO) for secure database queries.
+- Modularize reusable components (header, footer, navigation).
+- Separate business logic from presentation layer.
